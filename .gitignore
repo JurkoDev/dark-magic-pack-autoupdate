@@ -14,7 +14,9 @@
 !minecraft/mods
 !minecraft/mods/*
 !mmc-pack.json
-
+!.github
+!.github/workflows
+!.github/workflows/main.yaml
 
 
 
