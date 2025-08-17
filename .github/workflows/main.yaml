@@ -17,7 +17,7 @@ jobs:
         with:
           server: gamesdal145.bisecthosting.com
           port: 2022
-          protocol: ftps
+          protocol: sftp
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
           server-dir: ./
