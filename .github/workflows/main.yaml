@@ -13,17 +13,14 @@ jobs:
         uses: actions/checkout@v4
 
       - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
         with:
           server: gamesdal145.bisecthosting.com
           port: 2022
-          protocol: ftp
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
-          server-dir: ./
-          local-dir: ./minecraft/
-          exclude: |
-            **/mods/watermedia-*.jar
+          local_path: ./minecraft/*
+          rsyncArgs: --exclude 'mods/watermedia-*.jar'
       - name: 🛜 Rcon Reload
         uses: wolfigster/rcon-action@v1.0.2
         with:
