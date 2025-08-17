@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.ftp_password }}
           local_path: ./minecraft/*
           remote_path: ./
-          rsyncArgs: --exclude 'mods/watermedia-*.jar'
+          rsyncArgs: --exclude 'mods/watermedia-*.jar -vvv'
       - name: 🛜 Rcon Reload
         uses: wolfigster/rcon-action@v1.0.2
         with:
