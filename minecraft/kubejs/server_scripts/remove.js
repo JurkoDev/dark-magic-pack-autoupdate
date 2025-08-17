@@ -11,6 +11,7 @@ ServerEvents.recipes((event) => {
         //cc
         { "output": /computercraft:.*/ },
         { "output": /advancedperipherals:.*/ },
+        { "output": /computer_cartographer:.*/ },
         // entangled
         { "output": /entangled:.*/ },
 
