@@ -17,8 +17,8 @@
 !.github
 !.github/workflows
 !.github/workflows/main.yaml
-
-
+!minecraft/config
+!minecraft/config/gitautoupdater-variations.yml
 
 minecraft/mods/jsmacros-1.20.1-*-forge.jar
 minecraft/mods/baritone-standalone-forge-*.jar

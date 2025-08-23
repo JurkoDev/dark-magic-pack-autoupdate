@@ -1,0 +1,10 @@
+variations:
+  - name: "heavy"
+    branch: "overlay-heavy"
+    description: "The Original experience"
+
+  - name: "light"
+    branch: "overlay-light"
+    description: "The light pack"
+
+comment: "Branch Variations Configuration - defines available pack variations"
