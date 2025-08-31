@@ -15,7 +15,7 @@ jobs:
       - name: 📂 Sync files
         uses: wlixcc/SFTP-Deploy-Action@v1.2.6
         with:
-          server: gamesdal145.bisecthosting.com
+          server: gamesdal237.bisecthosting.com
           port: 2022
           sftp_only: true
           username: ${{ secrets.ftp_username }}
